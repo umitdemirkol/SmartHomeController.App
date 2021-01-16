@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Comunication">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="124dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="229dp"
+        android:text="Alarm"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/btnalarmac2"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnalarmkapat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/btnbackground"
+        android:text="Kapat"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btnalarmac2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/btnbackground"
+        android:text="aç"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btnalarmac" />
+
+    <Button
+        android:id="@+id/btngarajkapat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btnbackground"
+        android:text="Kapat"
+        app:layout_constraintEnd_toEndOf="@+id/btnalarmkapat"
+        app:layout_constraintStart_toStartOf="@+id/btnalarmkapat"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btngarajac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/btnbackground"
+        android:text="Aç"
+        app:layout_constraintEnd_toEndOf="@+id/btnalarmac"
+        app:layout_constraintStart_toStartOf="@+id/btnalarmac"
+        app:layout_constraintTop_toBottomOf="@+id/led_on" />
+
+    <Button
+        android:id="@+id/btnalarmkapat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/btnbackground"
+        android:text="Kapat"
+        app:layout_constraintEnd_toEndOf="@+id/btnalarmkapat2"
+        app:layout_constraintStart_toStartOf="@+id/btnalarmkapat2"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnalarmac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/btnbackground"
+        android:text="aç"
+        app:layout_constraintEnd_toEndOf="@+id/btnalarmac2"
+        app:layout_constraintStart_toStartOf="@+id/btnalarmac2"
+        app:layout_constraintTop_toBottomOf="@+id/btngarajac" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="124dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="57dp"
+        android:text="Mutfak Işık"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnalarmac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btngarajac" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="135dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:text="Salon Işık"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/led_off"
+        app:layout_constraintEnd_toStartOf="@+id/led_off"
+        app:layout_constraintStart_toStartOf="@+id/led_off"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/led_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/btnbackground"
+        android:text="Kapat"
+        app:layout_constraintBottom_toBottomOf="@+id/led_on"
+        app:layout_constraintEnd_toEndOf="@+id/btngarajkapat"
+        app:layout_constraintStart_toStartOf="@+id/btngarajkapat" />
+
+    <Button
+        android:id="@+id/led_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btnbackground"
+        android:text="Aç"
+        app:layout_constraintEnd_toEndOf="@+id/btngarajac"
+        app:layout_constraintStart_toStartOf="@+id/btngarajac"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="212dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="118dp"
+        android:text="Garaj Kapısı"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="201dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:text="Ümit Uğur DEMİRKOL"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="656dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/smarthome" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="268dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnalarmac2"
+        app:srcCompat="@drawable/icon1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
